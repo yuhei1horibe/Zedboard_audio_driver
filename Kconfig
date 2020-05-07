@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: GPL-2.0-only
+config SND_SOC_ZED_SND_CARD
+	tristate "Audio support for the the Zedboard ADAU1761 sound card."
+	depends on SND_SOC_XILINX_AUDIO_FORMATTER
+	depends on SND_SOC_XILINX_I2S
+    depends on SND_SOC_ADAU1761_I2C
+	help
+	  Select this option to enable Zedboard sound card
+	  support. This enables sound card using xilinx soft IPs
+	  and ADAU1761 CODEC in audio pipeline.
